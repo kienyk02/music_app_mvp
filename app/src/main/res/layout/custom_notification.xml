@@ -1,0 +1,78 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:weightSum="10">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:layout_weight="3.5"
+        android:src="@drawable/music_logo" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6.5"
+        android:paddingStart="10dp"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/txtSongName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="start"
+            android:text="@string/name_song"
+            android:textSize="25sp" />
+        <TextView
+            android:id="@+id/txtSongAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="start"
+            android:text="@string/author"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="bottom"
+            android:layout_weight="6"
+            android:layout_marginBottom="10dp"
+            android:weightSum="9">
+
+            <ImageButton
+                android:id="@+id/btnPrevious"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:scaleType="fitCenter"
+                android:src="@drawable/left_arrow"
+                app:backgroundTint="@android:color/transparent" />
+
+            <ImageButton
+                android:id="@+id/btnPlayPause"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:scaleType="fitCenter"
+                android:src="@drawable/play"
+                app:backgroundTint="@android:color/transparent" />
+
+            <ImageButton
+                android:id="@+id/btnNext"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:scaleType="fitCenter"
+                android:src="@drawable/right_arrow"
+                app:backgroundTint="@android:color/transparent" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

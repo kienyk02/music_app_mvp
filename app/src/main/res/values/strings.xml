@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MusicAppMVP</string>
+    <string name="name_song">Name song</string>
+    <string name="author">author</string>
+</resources>
