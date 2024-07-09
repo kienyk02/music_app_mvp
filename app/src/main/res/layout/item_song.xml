@@ -17,7 +17,7 @@
             android:layout_height="80dp"
             android:layout_gravity="center"
             android:scaleType="fitCenter"
-            android:src="@drawable/music_logo" />
+            android:src="@drawable/headphone" />
 
         <LinearLayout
             android:layout_width="match_parent"
